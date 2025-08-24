@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="abc123xyz" />
+  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="mfh9CVBoahUpJKUyM2Rh5o3pu1gIk6H5Hd3LdqyvW8Y" />
-  ...
-</head>
 
   <!-- SEO Meta -->
   <title>YouTube Thumbnail Downloader | Free HD & 4K Thumbnails</title>
@@ -20,9 +16,12 @@
   <!-- Open Graph for Social Sharing -->
   <meta property="og:title" content="Free YouTube Thumbnail Downloader - HD & 4K" />
   <meta property="og:description" content="Download YouTube thumbnails in HD, Full HD, and 4K instantly with our free tool. Just paste the link and save images." />
-  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=YouTube+Thumbnail+Downloader" />
-  <meta property="og:url" content="https://your-github-username.github.io/your-repo-name/" />
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
+  <meta property="og:url" content="https://yourdomain.com/" />
   <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yourdomain.com/" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -75,16 +74,10 @@
     © 2025 YourToolSite | <a href="/privacy" class="underline">Privacy Policy</a>
   </footer>
 
-  <!-- Ad Placeholder (PropellerAds / AdSense) -->
-  <!-- Example: replace with your ad code -->
-  <div class="max-w-3xl mx-auto p-6 text-center">
-    <!-- AD CODE HERE -->
-  </div>
-
   <!-- Script -->
   <script>
     function extractVideoId(url) {
-      const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#&?]*).*/;
+      const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\\?v=)([^#&?]*).*/;
       const match = url.match(regExp);
       return (match && match[2].length === 11) ? match[2] : null;
     }
