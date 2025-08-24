@@ -4,115 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Google Site Verification -->
-  <meta name="google-site-verification" content="mfh9CVBoahUpJKUyM2Rh5o3pu1gIk6H5Hd3LdqyvW8Y" />
-
-  <!-- SEO Meta -->
-  <title>YouTube Thumbnail Downloader | Free HD & 4K Thumbnails</title>
-  <meta name="description" content="Download YouTube thumbnails in HD, Full HD, and 4K instantly. Free YouTube Thumbnail Downloader – paste video link, preview, and save images with one click." />
-  <meta name="keywords" content="youtube thumbnail downloader, youtube thumbnail download hd, free youtube thumbnail grabber, download youtube video thumbnail, youtube thumbnail online, 4k youtube thumbnail downloader" />
+  <title>YouTube Thumbnail Downloader | Max Resolution</title>
+  <meta name="description" content="Download YouTube thumbnails in max resolution instantly. Paste the video link and save the image directly to your device." />
+  <meta name="keywords" content="youtube thumbnail downloader, max resolution youtube thumbnail, download youtube thumbnail hd" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Free YouTube Thumbnail Downloader - HD & 4K" />
-  <meta property="og:description" content="Download YouTube thumbnails in HD, Full HD, and 4K instantly with our free tool. Just paste the link and save images." />
-  <meta property="og:image" content="https://yourdomain.com/preview.jpg" />
-  <meta property="og:url" content="https://yourdomain.com/" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Canonical -->
-  <link rel="canonical" href="https://yourdomain.com/" />
-
-  <!-- Tailwind CSS CDN -->
+  <link rel="canonical" href="https://hdjdjfhdn22.github.io/youtube-thumbnail-downloader/">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- PropellerAds Header Code -->
+  <script data-cfasync="false" type="text/javascript" src="https://propellerads.com/your-header-code.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-  <!-- Header -->
-  <header class="text-center py-6 bg-red-600 text-white shadow-lg">
-    <h1 class="text-3xl font-bold">🎥 YouTube Thumbnail Downloader</h1>
-    <p class="text-sm mt-2">Free HD, Full HD, and 4K Thumbnail Downloads</p>
-  </header>
+<header class="text-center py-6 bg-red-600 text-white shadow-lg">
+  <h1 class="text-3xl font-bold">🎥 YouTube Thumbnail Downloader</h1>
+  <p class="text-sm mt-2">Max Resolution Thumbnail Downloads</p>
+</header>
 
-  <!-- Main Section -->
-  <main class="max-w-3xl mx-auto p-6">
-    <div class="bg-white rounded-2xl shadow-md p-6 text-center">
-      <h2 class="text-xl font-semibold mb-4">Paste YouTube Link Below</h2>
-      <div class="flex gap-2">
-        <input id="ytLink" type="text" placeholder="https://www.youtube.com/watch?v=xxxx" 
-          class="flex-1 border rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"/>
-        <button onclick="getThumbnail()" 
-          class="px-6 py-2 bg-red-600 text-white rounded-xl hover:bg-red-700">Get</button>
-      </div>
+<main class="max-w-3xl mx-auto p-6">
+  <div class="bg-white rounded-2xl shadow-md p-6 text-center">
+    <h2 class="text-xl font-semibold mb-4">Paste YouTube Link Below</h2>
+    <div class="flex gap-2">
+      <input id="ytLink" type="text" placeholder="https://www.youtube.com/watch?v=xxxx" 
+        class="flex-1 border rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"/>
+      <button onclick="getThumbnail()" 
+        class="px-6 py-2 bg-red-600 text-white rounded-xl hover:bg-red-700">Get</button>
     </div>
+  </div>
 
-    <!-- Thumbnail Results -->
-    <div id="results" class="mt-8 space-y-8"></div>
+  <div id="results" class="mt-8 text-center"></div>
 
-    <!-- SEO Content -->
-    <section class="mt-12 bg-gray-100 rounded-xl p-6">
-      <h2 class="text-2xl font-bold mb-3">How to Download YouTube Thumbnails?</h2>
-      <ol class="list-decimal list-inside space-y-2">
-        <li>Copy the YouTube video URL.</li>
-        <li>Paste it in the box above.</li>
-        <li>Click the <b>Get</b> button.</li>
-        <li>Download the thumbnail in your preferred size (HD, Full HD, or 4K).</li>
-      </ol>
+  <!-- PropellerAds Banner Below Thumbnail -->
+  <div class="text-center my-6">
+    <script src="https://propellerads.com/your-banner-code.js"></script>
+  </div>
 
-      <h2 class="text-2xl font-bold mt-6 mb-3">Why Use This YouTube Thumbnail Downloader?</h2>
-      <ul class="list-disc list-inside space-y-2">
-        <li>100% Free and Easy to Use.</li>
-        <li>Download in HD, Full HD, or 4K quality.</li>
-        <li>No sign-up or software required.</li>
-        <li>Works on mobile, tablet, and desktop.</li>
-      </ul>
-    </section>
-  </main>
+</main>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 bg-gray-800 text-white text-sm">
-    © 2025 YourToolSite | <a href="/privacy" class="underline">Privacy Policy</a>
-  </footer>
+<footer class="text-center py-6 bg-gray-800 text-white text-sm">
+  © 2025 YourToolSite | <a href="/privacy" class="underline">Privacy Policy</a>
 
-  <!-- Script -->
-  <script>
-    function extractVideoId(url) {
-      const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\\?v=)([^#&?]*).*/;
-      const match = url.match(regExp);
-      return (match && match[2].length === 11) ? match[2] : null;
-    }
+  <!-- PropellerAds Footer Banner -->
+  <div class="my-2">
+    <script src="https://propellerads.com/your-footer-code.js"></script>
+  </div>
+</footer>
 
-    function getThumbnail() {
-      const url = document.getElementById("ytLink").value;
-      const videoId = extractVideoId(url);
+<script>
+function extractVideoId(url) {
+  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\\?v=)([^#&?]*).*/;
+  const match = url.match(regExp);
+  return (match && match[2].length === 11) ? match[2] : null;
+}
 
-      if (!videoId) {
-        alert("Invalid YouTube URL");
-        return;
-      }
+function getThumbnail() {
+  const url = document.getElementById("ytLink").value;
+  const videoId = extractVideoId(url);
 
-      const sizes = {
-        "Default (120x90)": "default",
-        "Medium (320x180)": "mqdefault",
-        "High (480x360)": "hqdefault",
-        "HD (1280x720)": "sddefault",
-        "Max Res (1920x1080)": "maxresdefault"
-      };
+  if (!videoId) {
+    alert("Invalid YouTube URL");
+    return;
+  }
 
-      let output = "";
-      for (const [label, size] of Object.entries(sizes)) {
-        const link = `https://img.youtube.com/vi/${videoId}/${size}.jpg`;
-        output += `
-          <div class="bg-white rounded-xl shadow p-4">
-            <h3 class="font-semibold mb-2">${label}</h3>
-            <img src="${link}" alt="${label}" class="rounded-xl w-full mb-3"/>
-            <a href="${link}" download 
-              class="px-4 py-2 bg-green-600 text-white rounded-xl hover:bg-green-700">Download</a>
-          </div>
-        `;
-      }
-      document.getElementById("results").innerHTML = output;
-    }
-  </script>
+  const maxResLink = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+
+  const output = `
+    <div class="bg-white rounded-xl shadow p-4 inline-block">
+      <img src="${maxResLink}" alt="Max Resolution Thumbnail" class="rounded-xl w-full mb-3"/>
+      <button onclick="downloadImage('${maxResLink}')" 
+        class="px-4 py-2 bg-green-600 text-white rounded-xl hover:bg-green-700">Download</button>
+    </div>
+  `;
+  document.getElementById("results").innerHTML = output;
+}
+
+function downloadImage(url) {
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = 'youtube-thumbnail.jpg';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
+
 </body>
 </html>
